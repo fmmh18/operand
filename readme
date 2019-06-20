@@ -1,0 +1,25 @@
+Base de dados utilizado do ano de 2012
+ira uma pasta sql que precisara ser executada caso queira se nao montar a estruturar manualmente e adicionar alguns dados.
+O arquivo do SQL esta na pasta SQL
+
+TABLE cidades
+cd_uf INT FK
+cd_cidade INT PK AI
+ds_cidade_nome VARCHAR
+
+TABLE bairros
+cd_bairro INT PK AI
+cd_cidade INT FK
+ds_bairro_nome VARCHAR
+
+TABLE uf
+cd_uf INT PK AI
+ds_uf_sigla CHAR(2)
+ds_uf_nome VARCHAR
+
+TABLE LOGRADOUROS
+CD_LOGRADOURO INT PK AI
+CD_BAIRRO INT FK
+CD_TIPO_LOGRADOUROS INT
+DS_LOGRADOURO_NOME VARCHAR
+NO_LOGRADOURO_CEP INT
